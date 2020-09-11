@@ -1,0 +1,41 @@
+@keyframes zoomInAndOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.container h1 {
+  margin: 0;
+  text-align: center;
+}
+.container .images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
