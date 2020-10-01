@@ -20,11 +20,11 @@ const Home = () => {
   const addScrollListener = useCallback(() => {
     window.addEventListener("scroll", function () {
       var documentHeight = document.body.scrollHeight;
-      if (window.pageYOffset < documentHeight - window.innerHeight) {
+
+      if (window.pageYOffset + window.innerHeight >= documentHeight) {
+        addBatch();
         return;
       }
-
-      addBatch();
     });
   }, [addBatch]);
 
